@@ -86,8 +86,6 @@ export function createLocalDesign(opts: {
     pages: opts.pages,
     thumbnail: null,
     source: opts.source ?? 'blank',
-    ownerId: null,
-    deletedAt: null,
     createdAt: new Date().toISOString(),
     updatedAt: new Date().toISOString(),
   }
