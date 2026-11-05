@@ -284,9 +284,6 @@ export async function deleteDesign(id: string): Promise<void> {
   // v0.10: drop any locally persisted offline state for this design
   void purgeOfflineState(id)
 }
-  // v0.10: drop any locally persisted offline state for this design
-  void purgeOfflineState(id)
-}
 
 /** v0.10: remove the IndexedDB offline doc + op queue for a design. */
 async function purgeOfflineState(id: string): Promise<void> {
